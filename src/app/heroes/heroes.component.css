@@ -75,12 +75,12 @@ h1 {
   }
   
   .heroes button:active {
-    background-color: #525252;
+    background-color: #405061;
     color: #fafafa;
   }
   
   .heroes button.selected {
-    background-color: black;
+    background-color: #405061; 
     color: white;
   }
   
@@ -90,7 +90,7 @@ h1 {
   }
   
   .heroes button.selected:active {
-    background-color: black;
+    background-color: rgb(46, 43, 43);
     color: white;
   }
   
