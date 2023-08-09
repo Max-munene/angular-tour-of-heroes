@@ -9,9 +9,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { ChildComponentComponent } from './child-component/child-component.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroesComponent, HeroDetailComponent],
+  declarations: [AppComponent, HeroesComponent, HeroDetailComponent, ChildComponentComponent, ParentComponentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
