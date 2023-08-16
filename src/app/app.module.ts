@@ -12,6 +12,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { TestServiceService } from './test-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TestServiceService } from './test-service.service';
     FormsModule,
     ReactiveFormsModule,
     MatToolbarModule,
+    HttpClientModule,
   ],
   providers: [TestServiceService],
   bootstrap: [AppComponent],

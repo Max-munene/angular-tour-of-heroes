@@ -5,7 +5,7 @@ import { TestServiceService } from '../test-service.service';
 @Component({
   // Component metadata: selector, template, and styles
   selector: 'app-child-component', // Selector to use this component in templates
-  template: `Say {{ childMessage }},
+  template: `<h1>Say {{ childMessage }}</h1>
     <ul *ngFor="let test of testdata">
       <li>{{ test.name }}, {{ test.age }}, {{ test.id }}</li>
     </ul>
@@ -25,7 +25,10 @@ export class ChildComponentComponent implements OnInit {
     this.messageEvent.emit('Hello August!'); // Emitting the event with a message
   }
   ngOnInit() {
-    this.testdata = this.testService.getTestDetails();
+    this.testService
+      .getTestDetails()
+      .subscribe((data) => (this.testdata = data));
+
     console.log(this.testdata);
   }
 }
