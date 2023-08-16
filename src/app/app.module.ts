@@ -11,9 +11,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { TestServiceService } from './test-service.service';
 
 @NgModule({
-  declarations: [AppComponent, HeroesComponent, HeroDetailComponent, ChildComponentComponent, ParentComponentComponent],
+  declarations: [
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    ChildComponentComponent,
+    ParentComponentComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,7 +28,7 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
     ReactiveFormsModule,
     MatToolbarModule,
   ],
-  providers: [],
+  providers: [TestServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
