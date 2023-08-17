@@ -6,13 +6,8 @@ import { throwError } from 'rxjs';
 @Component({
   // Component metadata: selector, template, and styles
   selector: 'app-child-component', // Selector to use this component in templates
-  template: `<h1>Say {{ childMessage }}</h1>
-    <h3>{{ errormsg }}</h3>
-    <ul *ngFor="let test of testdata">
-      <li>{{ test.name }}, {{ test.age }}, {{ test.nationality }}</li>
-    </ul>
-
-    <button (click)="sendMessage()">Say Hi</button>`, // Component template with data binding
+  templateUrl: './child-component.component.html',
+  // Component template with data binding
   styleUrls: ['./child-component.component.css'], // Component's style file
 })
 export class ChildComponentComponent implements OnInit {

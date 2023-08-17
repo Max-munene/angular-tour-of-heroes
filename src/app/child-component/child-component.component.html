@@ -1,2 +1,11 @@
-<p>child-component works!</p>
-<li []></li>
+<h1>Child Component</h1>
+<h1>Say {{ childMessage }}</h1>
+<h3>{{ errormsg }}</h3>
+<ul *ngFor="let test of testdata">
+  <li>{{ test.name }}, {{ test.age }}, {{ test.nationality }}</li>
+</ul>
+
+<button (click)="sendMessage()">Say Hi</button>
+
+<!-- router view gos here -->
+<router-outlet></router-outlet>

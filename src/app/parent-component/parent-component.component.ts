@@ -4,12 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   // Component metadata: selector, template, and styles
   selector: 'app-parent-component', // Selector to use this component in templates
-  template: `<h1>{{ message }}</h1>
-    <!-- Embedding the child component with inputs and outputs -->
-    <app-child-component
-      (messageEvent)="message = $event"
-      [childMessage]="parentMessage"
-    ></app-child-component>`,
+  templateUrl: './parent-component.component.html',
   styleUrls: ['./parent-component.component.css'], // Component's style file
 })
 export class ParentComponentComponent {
